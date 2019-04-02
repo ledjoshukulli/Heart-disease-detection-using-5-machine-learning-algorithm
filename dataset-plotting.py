@@ -66,7 +66,7 @@ for age in data.Age.unique():
     age_counter_target_0.append(len(data[(data['Age']==age)&(data.Target==0)]))
 plt.scatter(x=data.Age.unique(),y=age_counter_target_1,color='blue',label='Target 1')
 plt.scatter(x=data.Age.unique(),y=age_counter_target_0,color='red',label='Target 0')
-----------graph plotting----------
+#----------graph plotting----------
 plt.legend(loc='upper right',frameon=True)
 plt.xlabel('Age')
 plt.ylabel('Count')
